@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --primary-color: #2e5d9a;
+  --primary-dark: #1a3c6e;
+  --secondary-color: #EE8100;
+  --secondary-dark: #cc6e00;
+  --accent-color: #3498db;
+
+  /* Backgrounds */
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+
+  /* Text */
+  --text-main: #222;
+  --text-secondary: #555;
+  --text-light: #ffffff;
+
+  /* Fonts */
+  --font-primary: 'Poppins', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 15px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.page-wrapper {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+/* ============================================
+   GLOBAL RESPONSIVE SYSTEM
+   Works across all your pages and components
+============================================== */
+
+/* -------------------------------------------
+   GLOBAL TYPOGRAPHY SCALING
+---------------------------------------------- */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.7rem !important;
+  }
+
+  h2 {
+    font-size: 2.3rem !important;
+  }
+
+  h3 {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  h2 {
+    font-size: 1.9rem !important;
+  }
+
+  h3 {
+    font-size: 1.6rem !important;
+  }
+
+  p,
+  li {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  h3 {
+    font-size: 1.4rem !important;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.3rem !important;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* -------------------------------------------
+   GLOBAL SECTION SPACING
+---------------------------------------------- */
+@media (max-width: 1200px) {
+
+  section,
+  .section {
+    padding: 70px 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  section,
+  .section {
+    padding: 55px 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  section,
+  .section {
+    padding: 45px 15px !important;
+  }
+}
+
+/* -------------------------------------------
+   UNIVERSAL GRID SYSTEM
+---------------------------------------------- */
+@media (max-width: 992px) {
+
+  .grid,
+  .products-row,
+  .about-grid,
+  .gallery-grid,
+  .initiatives,
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 25px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .grid,
+  .products-row,
+  .about-grid,
+  .gallery-grid,
+  .initiatives,
+  .content-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* -------------------------------------------
+   GLOBAL LAYOUT / ALIGNMENT FIXES
+---------------------------------------------- */
+@media (max-width: 768px) {
+
+  .products-intro,
+  .about-text-block,
+  .campaign-text,
+  .contact-info,
+  .contact-form {
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  .products-intro p {
+    text-align: center !important;
+    margin: 0 auto !important;
+    max-width: 90%;
+  }
+}
+
+/* -------------------------------------------
+   BUTTON RESPONSIVE
+---------------------------------------------- */
+@media (max-width: 768px) {
+
+  button,
+  .cta-button,
+  .btn-submit {
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 1.1rem !important;
+    justify-content: center !important;
+  }
+}
+
+/* -------------------------------------------
+   HERO & NAVBAR OPTIMIZATION
+---------------------------------------------- */
+@media (max-width: 768px) {
+  /* .hero-image {
+
+    object-fit: cover !important;
+  } */
+
+  .nav-logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .hamburger span {
+    width: 24px !important;
+  }
+}
+
+/* -------------------------------------------
+   FOOTER RESPONSIVE
+---------------------------------------------- */
+@media (max-width: 992px) {
+  .footer .container {
+    flex-direction: column !important;
+    gap: 3rem !important;
+  }
+
+  .footer-bottom {
+    text-align: center !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
